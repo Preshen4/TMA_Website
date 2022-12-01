@@ -1,0 +1,33 @@
+﻿@model TMADll.Models.Semester
+
+<h4>Semester</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddSemester">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SemesterNo" class="control-label"></label>
+                <input asp-for="SemesterNo" class="form-control" />
+                <span asp-validation-for="SemesterNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NoOfWeeks" class="control-label"></label>
+                <input asp-for="NoOfWeeks" class="form-control" />
+                <span asp-validation-for="NoOfWeeks" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

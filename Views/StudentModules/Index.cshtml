@@ -1,0 +1,50 @@
+﻿@model IEnumerable<TMADll.Models.StudentModule>
+
+<p>
+    <a asp-controller="Modules" asp-action="Create">Create New</a>
+</p>
+
+<partial name="_Notification"/>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodeNavigation.Credits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SelfStudyHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RemainingHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentWeek)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.CodeNavigation.Credits)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.SelfStudyHours)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.RemainingHours)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.CurrentWeek)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TMADll.Models.StudySession>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StudyDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoOfHours)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentModule)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudyDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoOfHours)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentModule.StudentModuleId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudySessionId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudySessionId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudySessionId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,38 @@
+﻿@model TMADll.Models.StudentModule
+
+<h4>StudentModule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CodeNavigation.Code" class="control-label"></label>
+                <input asp-for="CodeNavigation.Code" class="form-control"/>
+                <span asp-validation-for="CodeNavigation.Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodeNavigation.Name" class="control-label"></label>
+                <input asp-for="CodeNavigation.Name" class="form-control" />
+                <span asp-validation-for="CodeNavigation.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodeNavigation.Credits" class="control-label"></label>
+                <input asp-for="CodeNavigation.Credits" class="form-control" />
+                <span asp-validation-for="CodeNavigation.Credits" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodeNavigation.HoursPerWeek" class="control-label"></label>
+                <input asp-for="CodeNavigation.HoursPerWeek" class="form-control" />
+                <span asp-validation-for="CodeNavigation.HoursPerWeek" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
