@@ -51,35 +51,27 @@ E) How to use the project:
 
 1) Click the run button in Visual Studio.
 
-2) You will be shown the LoginWindow. Please enter the requested data and then click the 'Enter' button to continue with the application or click the 'Exit' button to close the application.
+2) This will take you to the login screen. If you have an account you can login but if not you can click on REGISTER which is on the top navigation bar.
 
-![Login](https://user-images.githubusercontent.com/63053721/198496062-18f196c5-acbd-4c2d-bfe5-c16050b6cb10.JPG)
+![login](https://user-images.githubusercontent.com/63053721/205197767-32b15ad6-8896-4892-9ad5-b0741eeee616.JPG)
 
-3) If you don't have an account click the signUp button. This will take you to a form to register an account.
+![Reg](https://user-images.githubusercontent.com/63053721/205197774-8f255326-37c6-486a-9ca1-265211d6cf88.JPG)
 
-![SignUp](https://user-images.githubusercontent.com/63053721/198496035-7df81ed1-8bd1-424e-b13e-da0d9fa57608.JPG)
+3) Once you login you will be taken to the semester create page which is required in order for you to add modules. Add your semesters details.
 
-4) Errors will be displayed to the user and the error can be viewed by hovering over the highlighted text box.
+![Sem](https://user-images.githubusercontent.com/63053721/205197827-127b15b6-f148-4776-9156-e277afea6a91.JPG)
 
-![Error](https://user-images.githubusercontent.com/63053721/198496497-289c4691-cd1d-49b7-b9a1-42575a13b3f7.JPG)
+4) Once you add your semester you can add your modules and it will be displayed to the user on the dashboard.
 
-5) You will be shown the main form of the applicaiton. Click on one of the 3 options on the navigation bar to continue.
+![Module](https://user-images.githubusercontent.com/63053721/205197943-eb8322cd-20ad-4636-b7b6-5e5ba17c6e0c.JPG)
 
-6) The Dashboard has a data grid that will fill up as the user enters their modules into the Caption form. 
+5) You can input your study details. This will effect the remaining hours of your module on the dashboard.
 
-![DashboardNull](https://user-images.githubusercontent.com/63053721/198496133-952b23b4-05fb-48a8-9910-5c2599bea078.JPG)
+![Study](https://user-images.githubusercontent.com/63053721/205197865-21bb61bd-6016-4493-a0b9-ede4fd4bf979.JPG)
 
-![DashboardFull](https://user-images.githubusercontent.com/63053721/198496139-42b4832a-c7c6-4c5b-9a55-e25070e718c7.JPG)
+6) You can create a reminder to be displayed on the dashboard as a specific day of the week will be selected for each module, reminding you on that day to study for it.
 
-7) The Capture button has a form that must be filled out so that your modules can be displayed onto the data gird in the Dashboard page.
-
-![Capture](https://user-images.githubusercontent.com/63053721/198496187-c43d0121-bc93-4f15-ba08-3285eb6b26d5.JPG)
-
-8) The Study button has a form that must be filled out to calculate your remaining hours of study for the week.
-
-![Studied](https://user-images.githubusercontent.com/63053721/198496229-d7a875db-2c40-4102-893b-f16cf034501e.JPG)
-
-9) To exit the application please select the Exit option at the bottom left.
+![Remind](https://user-images.githubusercontent.com/63053721/205197903-8cca48d2-3380-469d-8456-9890ed6ae831.JPG)
 
 F) Credits:
 
@@ -98,6 +90,4 @@ H) What I would like to add:
 
 I) UMl: 
 
-![UML Part 2 drawio (1)](https://user-images.githubusercontent.com/63053721/199377761-d86e9da9-1dbc-4cb2-be01-d537440f31a0.png)
-
-
+![Part 3 drawio](https://user-images.githubusercontent.com/63053721/205197984-cf8dfd4e-ddd4-4fa9-ae56-9940f5df97bc.png)
