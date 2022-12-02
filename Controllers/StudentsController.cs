@@ -21,6 +21,7 @@ namespace TimeManagementApp.Controllers
             return View();
         }
 
+
         // Post : Students/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -50,7 +51,7 @@ namespace TimeManagementApp.Controllers
             if (studentClass.Register(student))
             {
                 SignIN(student.StudentNumber);
-                return RedirectToAction("Index", "StudentModules");
+                return RedirectToAction("AddSemester", "Semesters");
             }
             ModelState.AddModelError("", "Your Student Number is already registered");
             return View();

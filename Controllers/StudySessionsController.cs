@@ -11,6 +11,7 @@ namespace TimeManagementApp.Controllers
     {
         private readonly TimeManagementAppContext _context;
         private readonly StudyClass studyClass = new StudyClass();
+
         public StudySessionsController(TimeManagementAppContext context)
         {
             _context = context;
