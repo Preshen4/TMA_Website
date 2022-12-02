@@ -16,7 +16,7 @@ Table of Contents:
  G - Challenges.
  H - What I would like to Add.
  I - UML.
- J - Change Log.
+ J - References.
 
 A) How I Implented Feedback: 
 
@@ -93,3 +93,10 @@ H) What I would like to add:
 I) UMl: 
 
 ![Part 3 drawio](https://user-images.githubusercontent.com/63053721/205197984-cf8dfd4e-ddd4-4fa9-ae56-9940f5df97bc.png)
+
+J) 
+ 
+1) https://www.youtube.com/watch?v=hZ1DASYd9rk How to make an ASP.net app
+2) https://www.youtube.com/watch?v=zQLdpm8icTw Add notification, use bootstrap for making the app look better
+
+
